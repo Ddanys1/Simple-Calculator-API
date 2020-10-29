@@ -1,0 +1,16 @@
+<h1>Simple Calculator</h1>
+<p1>Enter your first number</p1><br>
+<p1>Enter your second  number</p1><br>
+<p1>Finally enter your operand </p1><br>
+<br>
+
+<form action='get' method='post'>
+
+	{% csrf_token %}
+
+	Enter your value: <input type="text" name="numb1"><br>
+
+	<input type = "submit">
+</form>
+
+<p1>After all values are entered go to /answer for your answer</p1>
